@@ -89,7 +89,7 @@ a:first-child{
 }
 
 .banner1 img{
-    width: 500PX;
+    width: 500px;
     height: 500px;
     position: fixed;
     animation-name: rotate;
@@ -203,46 +203,8 @@ a:first-child{
         transform: translateY(-600px);
     }
   }
-  /* @keyframes fromtextTranslate {
-    0% {
-        transform: translateX(0) ;
-        transition: all 0.5s;
-    
-    }
-    100% {
-        transform: translateX(100vw) ;
-        transition: all 0.5s;
-        
-    }
-
-}  */
-
-  /* @keyframes titleP{
-    0%{
-        display: none;
-        font-size: 30px;
-        color: red;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
-    50%{
-        display: none;
-        font-size: 50px;
-    }
-    90%{
-        display: flex;
-        font-size: 80px;
-    }
-    80%{
-        font-size: 100px;
-    }
-    100%{
-        text-align: center;
-
-    }
-    80%{
-    }
-
-  } */
+ 
+  
   @keyframes cambBack{
     0%{
 
@@ -262,69 +224,6 @@ a:first-child{
     }
   }
 
-  /* .banner1 div{
-    position: absolute;
-    background-image: url("./img/bicicleta1.png");
-    z-index: 15;
-    width: 200px;
-    height: 200px;
-    background-size: cover;
-    animation-name: bici ;
-    animation-timeline: scroll(root);
-     animation-range: 0 10000px;
-     animation-duration: 20s;
-     animation-fill-mode:forwards;
-  } */
-
-  /* @keyframes bici{
-    0%{
-        transform: translateX(0);
-
-    }
-    10%{
-        background-image: url("./img/bicicleta2.png");
-        transform: translateX(10vh);
-    }
-    20%{
-        background-image: url("./img/bicicleta3.png");
-        transform: translateX(20vh);
-    }
-    30%{
-        background-image: url("./img/bicicleta1.png");
-        transform: translateX(30vh);
-    }
-    40%{
-        background-image: url("./img/bicicleta2.png");
-        transform: translateX(40vh);
-    }
-
-    50%{
-        transform: translateX(50vh);
-        background-image: url("./img/bicicleta3.png");
-    }
-    60%{
-        background-image: url("./img/bicicleta1.png");
-        transform: translateX(60vh);
-    }
-    70%{
-        background-image: url("./img/bicicleta2.png");
-        transform: translateX(70vh);
-    }
-    80%{
-        background-image: url("./img/bicicleta3.png");
-        transform: translateX(80vh);
-    }
-    90%{
-        background-image: url("./img/bicicleta1.png");
-        transform: translateX(90vh);
-    }
-    100%{
-        background-image: url("./img/bicicleta2.png");
-        transform: translateX(200vh);
-    }
-
-
-  } */
  
   /* @keyframes position{
     0%{
@@ -337,3 +236,85 @@ a:first-child{
 
 
   } */
+
+  @media only screen and (min-width: 320px) and (max-width: 620px) {
+    
+    .S{
+        font-family: "Anton", sans-serif;  
+          font-size: 17px;
+          height: 100px;
+       
+    
+    
+    }
+
+    @keyframes changeText{
+        0%{
+            transform: translateY(0);
+        }
+        100%{
+            transform: translateY(-900px);
+        }
+      }
+
+      @keyframes rotate {
+        0% {
+            transform: translateX(0) rotate(0deg);
+            transition: all 0.5s;
+        
+        }
+        100% {
+            transform: translateX(130vw) rotate(360deg);
+            transition: all 0.5s;
+            
+        }
+
+  } 
+  @keyframes LineBlack{
+    0%{
+       
+        
+        transform:  translateX(0);
+        
+    }
+    
+    100%{
+        
+        transform:  translateX(60vh);
+        width: 450px;
+    }
+}
+
+      .containerTitle div{
+        font-family: "Anton", sans-serif; 
+        font-size: 28px;
+        width: 50%;
+       
+    }
+
+    .banner1 img{
+        width: 400px;
+        height: 400px;
+         animation-range: 0 2400px;
+        left: -300px;
+    
+    }
+
+    .lineaShadow{
+        width: 450px;
+        left: -200px;
+        top: 102%; 
+        padding: 0px;
+        animation-name: LineBlack;
+         animation-duration: 6s;
+         animation-fill-mode:forwards;
+         animation-timeline: scroll(root);
+         animation-range: 0 3300px;
+         border-radius: 50%;
+         background-color: rgba(0, 0, 0, 0.177);
+         box-shadow: 12px -110px 20px 8px rgba(31, 31, 31, 0.427);
+         
+    
+       
+
+  }
