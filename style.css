@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap');
 *{
     font-family: "Bebas Neue", sans-serif;
 }
@@ -22,10 +23,8 @@ header{
 }
 header a{
     text-decoration: none;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-     'Open Sans', 'Helvetica Neue', sans-serif;
      color: aliceblue;
+     font-family: "Bebas Neue", sans-serif;
 
 }
 a:first-child{
@@ -49,12 +48,12 @@ a:first-child{
 }
 .bannercontainer{
     position: fixed;
-     background-image: url("./img/ImagenParaFondonew.png"); 
-   background-size: contain;
+     background-image: url("./img/carreteraCout.svg"); 
+   background-size: cover;
    backdrop-filter: blur(10px);
     width: 100%;
-    height: 100px;
-    top: 70%;
+    height: 100%;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,21 +63,29 @@ a:first-child{
     animation-range: 0 6200px;
     
     }
-.bannercontainer h1{
+/* .bannercontainer h1{
     position: fixed;
     text-align: center;
     font-size: 30px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "Anton", sans-serif;
     right: 25%;
     animation: titleP linear ;
-
     animation-timeline: scroll(root);
      animation-range: 0 1400px;
 
-}
+} */
 .containerTitle div{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 5rem;
+    font-family: "Anton", sans-serif;    font-size: 5rem;
+    width: 40%;
+    display: block;
+    align-items: center;
+    text-align: center;
+    animation-name: changeText;
+    animation-duration: 20s;
+    animation-delay: 15s;
+    animation-timeline: scroll(root);
+    animation-range: 0 1200px;
+    animation-fill-mode:forwards;
 }
 
 .banner1 img{
@@ -86,11 +93,10 @@ a:first-child{
     height: 500px;
     position: fixed;
     animation-name: rotate;
-     animation-duration: 20s;
-     animation-fill-mode:forwards;
-     animation-timeline: scroll(root);
+     animation-duration:  20s;
+     animation-fill-mode: forwards;
+     animation-timeline:  scroll(root);
      animation-range: 0 1200px;
-     bottom: 22%;
     left: -300px;
         z-index: 21;
 
@@ -105,31 +111,17 @@ a:first-child{
     text-align: center;
     position: absolute;
     bottom: 4%;
-    
+    font-family: "Bebas Neue", sans-serif;
 }
 
-.FromText{
-    width: 50%;
-    height: 50vh;
-    background-color: transparent;
-    z-index: 20;
-    position: absolute;
-    left: 25%;
-    bottom: 33%;
-    animation-name: fromtextTranslate;
-     animation-duration: 10s;
-     animation-fill-mode:forwards;
-     animation-timeline: scroll(root);
-     animation-range: 0 2300px;
-     
-}
+
 
 .lineaShadow{
     width: 350px;
     z-index: 16;
     position: absolute;
     left: -200px;
-    top: 70%; 
+    top: 102%; 
     padding: 0px;
     animation-name: LineBlack;
      animation-duration: 10s;
@@ -138,11 +130,41 @@ a:first-child{
      animation-range: 0 1300px;
      border-radius: 50%;
      background-color: rgba(0, 0, 0, 0.177);
-     box-shadow: 12px -30px 20px 8px rgba(0, 0, 0, 0.68);
+     box-shadow: 12px -30px 20px 8px rgba(31, 31, 31, 0.427);
      
 
    
 }
+.S{
+    font-family: "Anton", sans-serif;    font-size: 28px;
+    width: 40%;
+    display: block;
+    align-items: center;
+    text-align: center;
+    animation-name: changeText;
+    animation-duration: 20s;
+    animation-delay: 15s;
+    animation-timeline: scroll(root);
+    animation-range: 0 1200px;
+    animation-fill-mode:forwards;
+    position: relative;
+    top: 600px;
+
+
+}
+
+@keyframes changeText2{
+    0%{
+        transform: translateY(800px);
+      
+    
+    }
+    100%{
+        transform: translateY(0);
+       
+    }
+  }
+
 @keyframes LineBlack{
     0%{
        
@@ -172,7 +194,16 @@ a:first-child{
         }
 
   } 
-  @keyframes fromtextTranslate {
+
+  @keyframes changeText{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-600px);
+    }
+  }
+  /* @keyframes fromtextTranslate {
     0% {
         transform: translateX(0) ;
         transition: all 0.5s;
@@ -184,7 +215,7 @@ a:first-child{
         
     }
 
-} 
+}  */
 
   /* @keyframes titleP{
     0%{
