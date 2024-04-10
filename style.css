@@ -45,7 +45,7 @@ a:first-child{
 }
 .bannercontainer{
     position: fixed;
-   /* background-image: url("./img/carretera.jpeg"); */
+   background-image: url("./img/carretera.jpeg");
    background-size: cover;
     width: 100%;
     height: 100vh;
@@ -132,7 +132,7 @@ a:first-child{
        
     }
     100%{
-        /* background-image: url("./img/carreteras-mas-largas-de-mexico-111736.jpg"); */
+         background-image: url("./img/carreteras-mas-largas-de-mexico-111736.jpg");
         
     }
   }
